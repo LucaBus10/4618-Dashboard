@@ -1,8 +1,7 @@
-import edu.wpi.first.wpilibj.networktables.NetworkTable;
+//import edu.wpi.first.wpilibj.networktables.NetworkTable;
 import javafx.animation.KeyFrame;
 import javafx.animation.Timeline;
 import javafx.application.Application;
-import javafx.geometry.Pos;
 import javafx.scene.Group;
 import javafx.scene.Scene;
 import javafx.scene.canvas.GraphicsContext;
@@ -16,11 +15,11 @@ import javafx.scene.layout.Pane;
 import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 import javafx.util.Duration;
-import javafx.scene.shape.Circle;
 import javafx.scene.canvas.Canvas;
 
 import java.lang.reflect.Field;
 
+//god this looks awful
 public class Main extends Application{
     public static void main(String[] args) {
         launch(args);
@@ -73,7 +72,7 @@ public class Main extends Application{
         NumberAxis xAxis = new NumberAxis();
         xAxis.setLabel("Speed");
         NumberAxis yAxis = new NumberAxis();
-        LineChart<Number, Number> chart = new LineChart<Number, Number>(xAxis, yAxis);
+        LineChart<Number, Number> chart = new LineChart<>(xAxis, yAxis);
 
         Tooltip dummytooltip = new Tooltip();
         try {
@@ -132,7 +131,7 @@ public class Main extends Application{
         gc.setStroke(Color.BLACK);
         gc.setLineWidth(1);
 
-        gc.strokeLine(125, 125, 125 * Math.cos((Math.PI / 180) * angle) , 125 * Math.sin((Math.PI / 180) * angle)); //125 is the middle
+        gc.strokeLine(125, 125, 63 * Math.cos((Math.PI / 180) * angle) ,63 * Math.sin((Math.PI / 180) * angle)); //125 is the middle
 
         content.getChildren().add(canvas);
         canvas.setTranslateX(100);
