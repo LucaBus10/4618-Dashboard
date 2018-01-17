@@ -13,7 +13,7 @@ public class Main extends Application {
     @Override
     public void start(Stage stage) {
         // load the image
-        Image image = new Image("https://image.ibb.co/c0a5NR/field.png"); //couldn't get it to load
+        Image image = new Image("https://image.ibb.co/fxGqp6/field.png"); //couldn't get it to load
         //an image off of disk for some reason...
 
         // simple displays ImageView the image as is
